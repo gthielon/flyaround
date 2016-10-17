@@ -23,7 +23,4 @@ flight_delete:
     defaults: { _controller: "CoavBundle:Flight:delete" }
     methods:  DELETE
 
-coav_flight:
-        resource: "@CoavBundle/Resources/config/routing/flight.yml"
-        prefix:   /flight
 

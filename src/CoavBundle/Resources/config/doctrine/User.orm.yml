@@ -1,7 +1,5 @@
-CoavBundle\Entity\Reservation:
+CoavBundle\Entity\User:
     type: entity
-    table: null
-    repositoryClass: CoavBundle\Repository\ReservationRepository
     id:
         id:
             type: integer
@@ -12,11 +10,9 @@ CoavBundle\Entity\Reservation:
         name:
             type: string
             length: 255
-        nbSeats:
-            type: integer
     lifecycleCallbacks: {  }
 
-manyToMany:
-    passengers:
-        targetEntity: User
-        mappedBy: reservation
+    manyToMany:
+        reservations:
+            targetEntity: CoavBundle\Entity\Reservation
+            inversedBy: passengers

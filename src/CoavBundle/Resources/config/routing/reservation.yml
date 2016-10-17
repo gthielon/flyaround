@@ -23,7 +23,5 @@ reservation_delete:
     defaults: { _controller: "CoavBundle:Reservation:delete" }
     methods:  DELETE
 
-coav_reservation:
-        resource: "@CoavBundle/Resources/config/routing/reservation.yml"
-        prefix:   /reservation
+
 

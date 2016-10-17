@@ -192,32 +192,4 @@ class Flight
     {
         return $this->planeModle;
     }
-    /**
-     * @var \CoavBundle\Entity\Flight
-     */
-    private $Flight;
-
-
-    /**
-     * Set Flight
-     *
-     * @param \CoavBundle\Entity\Flight $flight
-     * @return Flight
-     */
-    public function setFlight(\CoavBundle\Entity\Flight $flight = null)
-    {
-        $this->Flight = $flight;
-
-        return $this;
-    }
-
-    /**
-     * Get Flight
-     *
-     * @return \CoavBundle\Entity\Flight 
-     */
-    public function getFlight()
-    {
-        return $this->Flight;
-    }
 }
